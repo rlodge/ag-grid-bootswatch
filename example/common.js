@@ -143,7 +143,7 @@ var currentTheme="default";
 function updateTheme(name) {
 	if (name == 'default') {
 		$('#bootswatch-theme').attr('href', '../node_modules/bootstrap/dist/css/bootstrap.min.css');
-		$('#ag-grid-theme').attr('href', '../node_modules/ag-grid/dist/styles/theme-bootstrap.css');
+		$('#ag-grid-theme').attr('href', '../css-min/' + name + '/theme-bootstrap.css');
 	} else {
 		$('#bootswatch-theme').attr('href', '../node_modules/bootswatch/' + name + '/bootstrap.min.css');
 		$('#ag-grid-theme').attr('href', '../css-min/' + name + '/theme-bootstrap.css');

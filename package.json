@@ -1,6 +1,6 @@
 {
   "name": "ag-grid-bootswatch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Bootswatch themes for ag-grid",
   "main": "gulpfile.js",
   "files": [
@@ -8,7 +8,8 @@
     "css-min/"
   ],
   "scripts": {
-    "build": "gulp build"
+    "build": "gulp build",
+    "start": "gulp serve"
   },
   "author": "Ross M. Lodge",
   "license": "MIT",
@@ -16,10 +17,12 @@
     "ag-grid": "9.1.0",
     "ag-grid-enterprise": "9.1.0",
     "bootstrap": "4.0.0-alpha.6",
+    "del": "^2.2.2",
     "gulp": "3.9.1",
     "gulp-clean-css": "3.3.1",
     "gulp-sass": "3.1.0",
     "gulp-sourcemaps": "2.6.0",
+    "gulp-webserver": "^0.9.1",
     "jquery": "2.3.1",
     "run-sequence": "1.2.2",
     "tether": "1.4.0"
