@@ -31,11 +31,12 @@ gulp.task('build', runSequence('clean', 'sass', 'minify-css', function() {
 	console.log('Finished');
 }));
 
-gulp.task('serve', runSequence('build', function() {
+gulp.task('serve', function() {
 	return gulp.src('.')
 		.pipe(webserver({
 			livereload: true,
 			directoryListing: true,
 			open: 'http://localhost:8000/example/example.html'
 		}));
-}));
+});
+
